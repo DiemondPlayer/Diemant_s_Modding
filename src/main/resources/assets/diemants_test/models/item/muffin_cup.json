@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "diemants_test:item/muffin_cup"
+  }
+}

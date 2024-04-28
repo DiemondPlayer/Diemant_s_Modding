@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "diemants_test:brown_muffin"
+    }
+  },
+  "result": {
+    "item": "diemants_test:muffin_block"
+  }
+}

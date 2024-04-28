@@ -1,6 +1,7 @@
 package net.diemond_player.diemants_test.item;
 
 import net.diemond_player.diemants_test.DiemantsTest;
+import net.diemond_player.diemants_test.item.custom.MetalDetectorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -12,8 +13,13 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item BROWN_MUFFIN = registerItem("brown_muffin", new Item(new FabricItemSettings()));
-    public static final Item MUFFIN_CUP = registerItem("muffin_cup", new Item(new FabricItemSettings()));
+    public static final Item BROWN_MUFFIN = registerItem("brown_muffin",
+            new Item(new FabricItemSettings()));
+    public static final Item MUFFIN_CUP = registerItem("muffin_cup",
+            new Item(new FabricItemSettings()));
+
+    public static final Item METAL_DETECTOR = registerItem("metal_detector",
+            new MetalDetectorItem(new FabricItemSettings().maxDamage(64)));
 
     private static void addItemsToFoodAndDrinkItemGroup(FabricItemGroupEntries entries){
         entries.add(BROWN_MUFFIN);

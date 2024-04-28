@@ -18,6 +18,8 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.BROWN_MUFFIN)).entries((displayContext, entries) -> {
                         entries.add(ModItems.BROWN_MUFFIN);
                         entries.add(ModItems.MUFFIN_CUP);
+                        entries.add(ModItems.METAL_DETECTOR);
+
                         entries.add(ModBlocks.MUFFIN_BLOCK);
                         entries.add(ModBlocks.MUFFIN_CUP_BLOCK);
 

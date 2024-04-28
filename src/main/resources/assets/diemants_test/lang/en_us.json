@@ -1,9 +1,12 @@
 {
   "item.diemants_test.brown_muffin": "Brown Muffin",
   "item.diemants_test.muffin_cup": "Muffin Cup",
+  "item.diemants_test.metal_detector": "Metal Detector",
 
   "block.diemants_test.muffin_block": "Muffin Block",
   "block.diemants_test.muffin_cup_block": "Muffin Cup Block",
+
+  "item.diemants_test.metal_detector.no_valuables": "No Valuables Found :(",
 
   "itemgroup.muffin": "Muffins"
 }

@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "diemants_test:item/brown_muffin"
-  }
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "diemants_test:item/brown_muffin",
+		"particle": "diemants_test:item/brown_muffin_p"
+	}
 }

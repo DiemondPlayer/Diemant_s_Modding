@@ -22,6 +22,7 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.MUFFIN_BLOCK);
                         entries.add(ModBlocks.MUFFIN_CUP_BLOCK);
+                        entries.add(ModBlocks.SOUND_BLOCK);
 
 
                     }).build());

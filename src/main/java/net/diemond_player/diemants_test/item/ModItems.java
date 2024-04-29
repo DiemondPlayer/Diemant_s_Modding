@@ -2,9 +2,11 @@ package net.diemond_player.diemants_test.item;
 
 import net.diemond_player.diemants_test.DiemantsTest;
 import net.diemond_player.diemants_test.item.custom.MetalDetectorItem;
+import net.diemond_player.diemants_test.item.custom.MuffinItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -14,7 +16,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final Item BROWN_MUFFIN = registerItem("brown_muffin",
-            new Item(new FabricItemSettings()));
+            new MuffinItem(new FabricItemSettings().food(ModFoodComponents.BROWN_MUFFIN)));
     public static final Item MUFFIN_CUP = registerItem("muffin_cup",
             new Item(new FabricItemSettings()));
 

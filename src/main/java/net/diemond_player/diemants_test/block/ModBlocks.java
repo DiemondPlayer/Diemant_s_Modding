@@ -1,6 +1,7 @@
 package net.diemond_player.diemants_test.block;
 
 import net.diemond_player.diemants_test.DiemantsTest;
+import net.diemond_player.diemants_test.block.custom.SoundBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -17,6 +18,9 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK)));
     public static final Block MUFFIN_CUP_BLOCK = registerBlock("muffin_cup_block",
             new Block(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK)));
+    public static final Block SOUND_BLOCK = registerBlock("sound_block",
+            new SoundBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK)));
+
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(DiemantsTest.MOD_ID, name), block);

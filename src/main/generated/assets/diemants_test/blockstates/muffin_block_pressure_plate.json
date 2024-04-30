@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "diemants_test:block/muffin_block_pressure_plate"
+    },
+    "powered=true": {
+      "model": "diemants_test:block/muffin_block_pressure_plate_down"
+    }
+  }
+}

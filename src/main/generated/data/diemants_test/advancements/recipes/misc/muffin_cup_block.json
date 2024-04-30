@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_muffin_cup": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "diemants_test:muffin_cup"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:muffin_cup_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_muffin_cup"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:muffin_cup_block"
+    ]
+  },
+  "sends_telemetry_event": false
+}

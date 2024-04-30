@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "diemants_test:block/muffin_block",
+    "side": "diemants_test:block/muffin_block",
+    "top": "diemants_test:block/muffin_block"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "diemants_test:muffin_block",
+    "#minecraft:redstone_ores"
+  ]
+}

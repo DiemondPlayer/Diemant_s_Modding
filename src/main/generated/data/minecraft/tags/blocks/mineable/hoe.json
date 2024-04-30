@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "diemants_test:muffin_block",
+    "diemants_test:muffin_block_stairs",
+    "diemants_test:muffin_block_slab",
+    "diemants_test:muffin_block_button",
+    "diemants_test:muffin_block_pressure_plate",
+    "diemants_test:muffin_cup_block"
+  ]
+}

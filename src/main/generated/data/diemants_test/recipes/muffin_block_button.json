@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "diemants_test:muffin_block"
+    }
+  ],
+  "result": {
+    "item": "diemants_test:muffin_block_button"
+  }
+}

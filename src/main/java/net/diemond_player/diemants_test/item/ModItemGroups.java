@@ -21,6 +21,10 @@ public class ModItemGroups {
                         entries.add(ModItems.METAL_DETECTOR);
 
                         entries.add(ModBlocks.MUFFIN_BLOCK);
+                        entries.add(ModBlocks.MUFFIN_BLOCK_STAIRS);
+                        entries.add(ModBlocks.MUFFIN_BLOCK_SLAB);
+                        entries.add(ModBlocks.MUFFIN_BLOCK_BUTTON);
+                        entries.add(ModBlocks.MUFFIN_BLOCK_PRESSURE_PLATE);
                         entries.add(ModBlocks.MUFFIN_CUP_BLOCK);
                         entries.add(ModBlocks.SOUND_BLOCK);
 

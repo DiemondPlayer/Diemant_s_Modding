@@ -4,10 +4,17 @@
   "item.diemants_test.metal_detector": "Metal Detector",
 
   "block.diemants_test.muffin_block": "Muffin Block",
+  "block.diemants_test.muffin_block_stairs": "Muffin Block Stairs",
+  "block.diemants_test.muffin_block_slab": "Muffin Block Slab",
+  "block.diemants_test.muffin_block_button": "Muffin Block Button",
+  "block.diemants_test.muffin_block_pressure_plate": "Muffin Block Pressure Plate",
   "block.diemants_test.muffin_cup_block": "Muffin Cup Block",
   "block.diemants_test.sound_block": "Sound Block",
 
   "item.diemants_test.metal_detector.no_valuables": "No Valuables Found :(",
+
+  "tooltip.diemants_test.press_shift": "Press §eSHIFT§r for more info",
+  "tooltip.diemants_test.muffin_item": "20% chance to apply Regeneration II for 6 seconds",
 
   "itemgroup.muffin": "Muffins"
 }

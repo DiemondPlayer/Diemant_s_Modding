@@ -4,8 +4,7 @@ import net.diemond_player.diemants_test.DiemantsTest;
 import net.diemond_player.diemants_test.block.custom.SoundBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -16,6 +15,14 @@ public class ModBlocks {
 
     public static final Block MUFFIN_BLOCK = registerBlock("muffin_block",
             new Block(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK)));
+    public static final Block MUFFIN_BLOCK_STAIRS = registerBlock("muffin_block_stairs",
+            new StairsBlock(ModBlocks.MUFFIN_BLOCK.getDefaultState(), FabricBlockSettings.copyOf(Blocks.HAY_BLOCK)));
+    public static final Block MUFFIN_BLOCK_SLAB = registerBlock("muffin_block_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK)));
+    public static final Block MUFFIN_BLOCK_BUTTON = registerBlock("muffin_block_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK), BlockSetType.BIRCH, 10, true));
+    public static final Block MUFFIN_BLOCK_PRESSURE_PLATE = registerBlock("muffin_block_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.HAY_BLOCK), BlockSetType.BIRCH));
     public static final Block MUFFIN_CUP_BLOCK = registerBlock("muffin_cup_block",
             new Block(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK)));
     public static final Block SOUND_BLOCK = registerBlock("sound_block",

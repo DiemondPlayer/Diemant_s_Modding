@@ -1,5 +1,6 @@
 package net.diemond_player.diemants_test.item.custom;
 
+import net.diemond_player.diemants_test.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -54,7 +55,6 @@ public class MetalDetectorItem extends Item {
     }
 
     private boolean isValuableBlock(BlockState blockstate) {
-        return blockstate.getBlock() == Blocks.DIAMOND_ORE || blockstate.getBlock() == Blocks.GOLD_ORE
-                || blockstate.getBlock() == Blocks.IRON_ORE;
+        return blockstate.isIn(ModTags.Blocks.METAL_DETECTOR_DETECTABLE_BLOCKS);
     }
 }

@@ -3,6 +3,7 @@ package net.diemond_player.diemants_test;
 import net.diemond_player.diemants_test.block.ModBlocks;
 import net.diemond_player.diemants_test.item.ModItemGroups;
 import net.diemond_player.diemants_test.item.ModItems;
+import net.diemond_player.diemants_test.util.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -17,5 +18,6 @@ public class DiemantsTest implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();
+		ModRegistries.registerModStuffs();
 	}
 }

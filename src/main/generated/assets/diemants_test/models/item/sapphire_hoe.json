@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "diemants_test:item/sapphire_hoe"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_trapdoor_open",
+  "textures": {
+    "texture": "diemants_test:block/muffin_block_trapdoor"
+  }
+}

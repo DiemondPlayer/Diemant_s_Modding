@@ -16,6 +16,11 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MUFFIN_BLOCK_SLAB, slabDrops(ModBlocks.MUFFIN_BLOCK_SLAB));
         addDrop(ModBlocks.MUFFIN_BLOCK_BUTTON);
         addDrop(ModBlocks.MUFFIN_BLOCK_PRESSURE_PLATE);
+        addDrop(ModBlocks.MUFFIN_BLOCK_FENCE);
+        addDrop(ModBlocks.MUFFIN_BLOCK_FENCE_GATE);
+        addDrop(ModBlocks.MUFFIN_BLOCK_WALL);
+        addDrop(ModBlocks.MUFFIN_BLOCK_TRAPDOOR);
+        addDrop(ModBlocks.MUFFIN_BLOCK_DOOR, doorDrops(ModBlocks.MUFFIN_BLOCK_DOOR));
         addDrop(ModBlocks.MUFFIN_CUP_BLOCK);
         addDrop(ModBlocks.SOUND_BLOCK);
 

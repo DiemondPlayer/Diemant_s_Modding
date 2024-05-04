@@ -6,6 +6,11 @@
     "diemants_test:muffin_block_slab",
     "diemants_test:muffin_block_button",
     "diemants_test:muffin_block_pressure_plate",
+    "diemants_test:muffin_block_fence",
+    "diemants_test:muffin_block_fence_gate",
+    "diemants_test:muffin_block_wall",
+    "diemants_test:muffin_block_door",
+    "diemants_test:muffin_block_trapdoor",
     "diemants_test:muffin_cup_block"
   ]
 }

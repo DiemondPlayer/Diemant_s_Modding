@@ -21,8 +21,18 @@ public class ModBlocks {
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK)));
     public static final Block MUFFIN_BLOCK_BUTTON = registerBlock("muffin_block_button",
             new ButtonBlock(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK), BlockSetType.BIRCH, 10, true));
+    public static final Block MUFFIN_BLOCK_FENCE = registerBlock("muffin_block_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK)));
+    public static final Block MUFFIN_BLOCK_FENCE_GATE = registerBlock("muffin_block_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK), WoodType.OAK));
+    public static final Block MUFFIN_BLOCK_WALL = registerBlock("muffin_block_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK)));
     public static final Block MUFFIN_BLOCK_PRESSURE_PLATE = registerBlock("muffin_block_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.HAY_BLOCK), BlockSetType.BIRCH));
+    public static final Block MUFFIN_BLOCK_DOOR = registerBlock("muffin_block_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR), BlockSetType.BIRCH));
+    public static final Block MUFFIN_BLOCK_TRAPDOOR = registerBlock("muffin_block_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR), BlockSetType.BIRCH));
     public static final Block MUFFIN_CUP_BLOCK = registerBlock("muffin_cup_block",
             new Block(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK)));
     public static final Block SOUND_BLOCK = registerBlock("sound_block",

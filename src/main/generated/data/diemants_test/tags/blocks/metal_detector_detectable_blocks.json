@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "diemants_test:muffin_block",
-    "#minecraft:redstone_ores"
+    "#minecraft:redstone_ores",
+    "#minecraft:diamond_ores"
   ]
 }

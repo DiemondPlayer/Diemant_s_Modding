@@ -19,12 +19,28 @@ public class ModItemGroups {
                         entries.add(ModItems.BROWN_MUFFIN);
                         entries.add(ModItems.MUFFIN_CUP);
                         entries.add(ModItems.METAL_DETECTOR);
+                        entries.add(ModItems.SAPPHIRE);
+                        entries.add(ModItems.SAPPHIRE_AXE);
+                        entries.add(ModItems.SAPPHIRE_HOE);
+                        entries.add(ModItems.SAPPHIRE_PICKAXE);
+                        entries.add(ModItems.SAPPHIRE_SHOVEL);
+                        entries.add(ModItems.SAPPHIRE_SWORD);
+                        entries.add(ModItems.SAPPHIRE_PAXEL);
+                        entries.add(ModItems.SAPPHIRE_HELMET);
+                        entries.add(ModItems.SAPPHIRE_CHESTPLATE);
+                        entries.add(ModItems.SAPPHIRE_LEGGINGS);
+                        entries.add(ModItems.SAPPHIRE_BOOTS);
 
                         entries.add(ModBlocks.MUFFIN_BLOCK);
                         entries.add(ModBlocks.MUFFIN_BLOCK_STAIRS);
                         entries.add(ModBlocks.MUFFIN_BLOCK_SLAB);
                         entries.add(ModBlocks.MUFFIN_BLOCK_BUTTON);
                         entries.add(ModBlocks.MUFFIN_BLOCK_PRESSURE_PLATE);
+                        entries.add(ModBlocks.MUFFIN_BLOCK_FENCE);
+                        entries.add(ModBlocks.MUFFIN_BLOCK_FENCE_GATE);
+                        entries.add(ModBlocks.MUFFIN_BLOCK_WALL);
+                        entries.add(ModBlocks.MUFFIN_BLOCK_DOOR);
+                        entries.add(ModBlocks.MUFFIN_BLOCK_TRAPDOOR);
                         entries.add(ModBlocks.MUFFIN_CUP_BLOCK);
                         entries.add(ModBlocks.SOUND_BLOCK);
 

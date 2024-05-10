@@ -1,6 +1,7 @@
 package net.diemond_player.diemants_test.item;
 
 import net.diemond_player.diemants_test.DiemantsTest;
+import net.diemond_player.diemants_test.block.ModBlocks;
 import net.diemond_player.diemants_test.item.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -40,6 +41,20 @@ public class ModItems {
             new ModArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item SAPPHIRE_BOOTS = registerItem("sapphire_boots",
             new ModArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item SAPPHIRE_HORSE_ARMOR = registerItem("sapphire_horse_armor",
+            new HorseArmorItem(14, "sapphire", new FabricItemSettings()));
+    public static final Item DATA_TABLET = registerItem("data_tablet",
+            new DataTabletItem(new FabricItemSettings().maxCount(1)));
+    public static final Item CAULIFLOWER = registerItem("cauliflower",
+            new Item(new FabricItemSettings().food(ModFoodComponents.CAULIFLOWER)));
+    public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
+            new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new FabricItemSettings()));
+    public static final Item CUSTOM_DYE = registerItem("custom_dye",
+            new CustomDyeItem(new FabricItemSettings()));
+    public static final Item RADIATION_STAFF = registerItem("radiation_staff",
+            new Item(new FabricItemSettings()));
+    public static final Item SAPPHIRE_BOW = registerItem("sapphire_bow",
+            new BowItem(new FabricItemSettings().maxDamage(300)));
 
     private static void addItemsToFoodAndDrinkItemGroup(FabricItemGroupEntries entries){
         entries.add(BROWN_MUFFIN);
@@ -53,4 +68,6 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemsToFoodAndDrinkItemGroup);
     }
+
+    // 07 05 2024 влад и мета тут были
 }

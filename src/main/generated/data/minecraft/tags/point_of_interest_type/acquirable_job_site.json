@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "diemants_test:soundpoi",
+      "required": false
+    }
+  ]
+}

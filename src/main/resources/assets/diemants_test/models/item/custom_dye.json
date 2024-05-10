@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "diemants_test:item/custom_dye_1",
+    "layer1": "diemants_test:item/custom_dye_1_overlay"
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "diemants_test:item/sapphire_bow",
+    "textures": {
+        "layer0": "diemants_test:item/sapphire_bow_pulling_2"
+    }
+}

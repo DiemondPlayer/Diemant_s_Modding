@@ -1,9 +1,11 @@
-// 1.20.2	2024-05-04T18:08:29.5328031	Diemant's Test/Tags for minecraft:block
+// 1.20.2	2024-05-11T00:23:58.4799159	Diemant's Test/Tags for minecraft:block
 a367ee3806d1a18771f085b19a50c25e50b2119f data\minecraft\tags\blocks\mineable\hoe.json
+7a16ec5e1ff348d84984e196805df950fbc81408 data\minecraft\tags\blocks\flowers.json
 5bba9c7ac326e97c5d092e2e87c75437519d359a data\diemants_test\tags\blocks\metal_detector_detectable_blocks.json
-3402e1f550064499a8d2445e94d32be86c751e91 data\minecraft\tags\blocks\fences.json
 7a175c44ad80ec6b6e2b5666e27eb5520aa0829f data\minecraft\tags\blocks\fence_gates.json
+3402e1f550064499a8d2445e94d32be86c751e91 data\minecraft\tags\blocks\fences.json
 4f840db51ee038f6af4a7ecb6b71718912bcb912 data\minecraft\tags\blocks\walls.json
+7a16ec5e1ff348d84984e196805df950fbc81408 data\minecraft\tags\blocks\small_flowers.json
 78ee634eba98ee3604a942446c647fc4bb3af203 data\minecraft\tags\blocks\trapdoors.json
 e35634ca5c5f4f5f95a5d828f9a08e58d33aa295 data\minecraft\tags\blocks\wooden_doors.json
 c716880e6ff6532ef3f8279ddfa40285b01886f3 data\diemants_test\tags\blocks\mineable\paxel.json

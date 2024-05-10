@@ -1,8 +1,13 @@
 package net.diemond_player.diemants_test;
 
 import net.diemond_player.diemants_test.block.ModBlocks;
+import net.diemond_player.diemants_test.block.entity.ModBlockEntities;
+import net.diemond_player.diemants_test.effect.ModEffects;
+import net.diemond_player.diemants_test.enchantment.ModEnchantments;
 import net.diemond_player.diemants_test.item.ModItemGroups;
 import net.diemond_player.diemants_test.item.ModItems;
+import net.diemond_player.diemants_test.potion.ModPotions;
+import net.diemond_player.diemants_test.screen.ModScreenHandlers;
 import net.diemond_player.diemants_test.util.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 
@@ -19,5 +24,10 @@ public class DiemantsTest implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();
 		ModRegistries.registerModStuffs();
+		ModEnchantments.registerModEnchantments();
+		ModBlockEntities.registerBlockEntities();
+		ModScreenHandlers.registerScreenHandlers();
+		ModEffects.registerEffects();
+		ModPotions.registerPotions();
 	}
 }

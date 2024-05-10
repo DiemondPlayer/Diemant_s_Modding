@@ -1,13 +1,16 @@
 package net.diemond_player.diemants_test.datagen;
 
 import net.diemond_player.diemants_test.block.ModBlocks;
+import net.diemond_player.diemants_test.block.custom.CauliflowerCropBlock;
+import net.diemond_player.diemants_test.block.custom.SapphireLampBlock;
 import net.diemond_player.diemants_test.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
+import net.minecraft.block.Blocks;
+import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.state.property.Properties;
+import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -31,6 +34,19 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.MUFFIN_BLOCK_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.MUFFIN_BLOCK_TRAPDOOR);
 
+        registerCustomLamp(blockStateModelGenerator);
+
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.GEM_EMPOWERING_STATION);
+
+        blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.PETUNIA, ModBlocks.POTTED_PETUNIA, BlockStateModelGenerator.TintType.NOT_TINTED);
+    }
+
+    private void registerCustomLamp(BlockStateModelGenerator blockStateModelGenerator) {
+        Identifier identifier = TexturedModel.CUBE_ALL.upload(ModBlocks.SAPPHIRE_LAMP, blockStateModelGenerator.modelCollector);
+        Identifier identifier2 = blockStateModelGenerator.createSubModel(ModBlocks.SAPPHIRE_LAMP, "_on", Models.CUBE_ALL, TextureMap::all);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.SAPPHIRE_LAMP).coordinate(BlockStateModelGenerator.createBooleanModelMap(SapphireLampBlock.CLICKED, identifier2, identifier)));
+
     }
 
     @Override
@@ -49,6 +65,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.SAPPHIRE_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.SAPPHIRE_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.SAPPHIRE_BOOTS);
+        itemModelGenerator.register(ModItems.SAPPHIRE_HORSE_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CAULIFLOWER, Models.GENERATED);
+
 
     }
 }

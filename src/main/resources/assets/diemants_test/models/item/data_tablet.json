@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "diemants_test:item/data_tablet_off"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "diemants_test:on": 1
+      },
+      "model": "diemants_test:item/data_tablet_on"
+    }
+  ]
+}

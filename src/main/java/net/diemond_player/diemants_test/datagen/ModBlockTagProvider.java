@@ -60,5 +60,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .forceAddTag(BlockTags.PICKAXE_MINEABLE)
                 .forceAddTag(BlockTags.AXE_MINEABLE)
                 .forceAddTag(BlockTags.SHOVEL_MINEABLE);
+
+        getOrCreateTagBuilder(BlockTags.FLOWERS)
+                .add(ModBlocks.PETUNIA);
+        getOrCreateTagBuilder(BlockTags.SMALL_FLOWERS)
+                .add(ModBlocks.PETUNIA);
     }
 }

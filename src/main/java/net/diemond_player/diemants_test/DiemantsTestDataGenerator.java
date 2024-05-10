@@ -14,5 +14,6 @@ public class DiemantsTestDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModBlockLootTableGenerator::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeGenerator::new);
+		pack.addProvider(ModPOITagProvider::new);
 	}
 }

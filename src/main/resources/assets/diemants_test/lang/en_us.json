@@ -12,7 +12,14 @@
   "item.diemants_test.sapphire_chestplate": "Sapphire Chestplate",
   "item.diemants_test.sapphire_leggings": "Sapphire Leggings",
   "item.diemants_test.sapphire_boots": "Sapphire Boots",
+  "item.diemants_test.sapphire_horse_armor": "Sapphire Horse Armor",
+  "item.diemants_test.sapphire_bow": "Sapphire Bow",
   "item.diemants_test.metal_detector": "Metal Detector",
+  "item.diemants_test.data_tablet": "Data Tablet",
+  "item.diemants_test.cauliflower": "Cauliflower",
+  "item.diemants_test.cauliflower_seeds": "Cauliflower Seeds",
+  "item.diemants_test.custom_dye": "Custom Dye",
+  "item.diemants_test.radiation_staff": "Radiation Staff",
 
   "block.diemants_test.muffin_block": "Muffin Block",
   "block.diemants_test.muffin_block_stairs": "Muffin Block Stairs",
@@ -26,11 +33,24 @@
   "block.diemants_test.muffin_block_trapdoor": "Muffin Block Trapdoor",
   "block.diemants_test.muffin_cup_block": "Muffin Cup Block",
   "block.diemants_test.sound_block": "Sound Block",
+  "block.diemants_test.sapphire_lamp": "Sapphire Lamp",
+  "block.diemants_test.petunia": "Petunia",
+  "block.diemants_test.gem_empowering_station": "Gem Empowering Station",
 
   "item.diemants_test.metal_detector.no_valuables": "No Valuables Found :(",
 
   "tooltip.diemants_test.press_shift": "Press §eSHIFT§r for more info",
   "tooltip.diemants_test.muffin_item": "20% chance to apply Regeneration II for 6 seconds",
 
-  "itemgroup.muffin": "Muffins"
+  "enchantment.diemants_test.lightning_striker": "Lightning Striker",
+
+  "itemgroup.muffin": "Muffins",
+
+  "entity.minecraft.villager.soundmaster": "Soundmaster",
+
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+
+  "effect.diemants_test.slimey": "Slimey"
 }

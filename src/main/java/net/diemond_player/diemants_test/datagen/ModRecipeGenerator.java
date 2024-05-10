@@ -11,6 +11,8 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 
+import java.util.List;
+
 public class ModRecipeGenerator extends FabricRecipeProvider {
     public ModRecipeGenerator(FabricDataOutput output) {
         super(output);
@@ -54,6 +56,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .input(ModBlocks.MUFFIN_BLOCK, 1)
                 .criterion(hasItem(ModBlocks.MUFFIN_BLOCK), conditionsFromItem(ModBlocks.MUFFIN_BLOCK))
                 .offerTo(exporter, new Identifier("muffin_block_button"));
+
 
     }
 }

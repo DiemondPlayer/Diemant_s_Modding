@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "diemants_test:block/sapphire_lamp"
+    },
+    "clicked=true": {
+      "model": "diemants_test:block/sapphire_lamp_on"
+    }
+  }
+}

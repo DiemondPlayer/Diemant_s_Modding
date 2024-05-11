@@ -23,7 +23,6 @@ public enum ModArmorMaterials implements ArmorMaterial {
         map.put(ArmorItem.Type.HELMET, 6);
     }), 25, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0f, 0.1f, () -> Ingredient.ofItems(ModItems.SAPPHIRE));
 
-    public static final StringIdentifiable.EnumCodec<ArmorMaterials> CODEC;
     private static final EnumMap<ArmorItem.Type, Integer> BASE_DURABILITY;
     private final String name;
     private final int durabilityMultiplier;
@@ -86,7 +85,6 @@ public enum ModArmorMaterials implements ArmorMaterial {
     }
 
     static {
-        CODEC = StringIdentifiable.createCodec(ArmorMaterials::values);
         BASE_DURABILITY = Util.make(new EnumMap(ArmorItem.Type.class), map -> {
             map.put(ArmorItem.Type.BOOTS, 13);
             map.put(ArmorItem.Type.LEGGINGS, 15);

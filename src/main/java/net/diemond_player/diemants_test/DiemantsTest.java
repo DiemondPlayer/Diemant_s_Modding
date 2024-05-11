@@ -7,7 +7,9 @@ import net.diemond_player.diemants_test.enchantment.ModEnchantments;
 import net.diemond_player.diemants_test.item.ModItemGroups;
 import net.diemond_player.diemants_test.item.ModItems;
 import net.diemond_player.diemants_test.potion.ModPotions;
+import net.diemond_player.diemants_test.recipe.ModRecipes;
 import net.diemond_player.diemants_test.screen.ModScreenHandlers;
+import net.diemond_player.diemants_test.sound.ModSounds;
 import net.diemond_player.diemants_test.util.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 
@@ -29,5 +31,7 @@ public class DiemantsTest implements ModInitializer {
 		ModScreenHandlers.registerScreenHandlers();
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
+		ModSounds.registerSounds();
+		ModRecipes.registerRecipes();
 	}
 }

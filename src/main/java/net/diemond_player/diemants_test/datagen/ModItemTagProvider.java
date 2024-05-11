@@ -21,5 +21,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                         ModItems.SAPPHIRE_CHESTPLATE,
                         ModItems.SAPPHIRE_LEGGINGS,
                         ModItems.SAPPHIRE_BOOTS);
+        getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
+                .add(ModItems.BAR_BRAWL_MUSIC_DISC);
     }
 }

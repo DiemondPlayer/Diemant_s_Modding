@@ -3,6 +3,7 @@ package net.diemond_player.diemants_test.item;
 import net.diemond_player.diemants_test.DiemantsTest;
 import net.diemond_player.diemants_test.block.ModBlocks;
 import net.diemond_player.diemants_test.item.custom.*;
+import net.diemond_player.diemants_test.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -55,6 +56,8 @@ public class ModItems {
             new Item(new FabricItemSettings()));
     public static final Item SAPPHIRE_BOW = registerItem("sapphire_bow",
             new BowItem(new FabricItemSettings().maxDamage(300)));
+    public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
+            new MusicDiscItem(9, ModSounds.BAR_BRAWL, new FabricItemSettings().maxCount(1), 122));
 
     private static void addItemsToFoodAndDrinkItemGroup(FabricItemGroupEntries entries){
         entries.add(BROWN_MUFFIN);

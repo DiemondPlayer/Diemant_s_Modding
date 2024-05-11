@@ -1,0 +1,46 @@
+{
+  "metal_detector_found_ore": {
+    "subtitle": "sounds.diemants_test.metal_detector_found_ore",
+    "sounds": [
+      "diemants_test:metal_detector_found_ore"
+    ]
+  },
+  "sapphire_lamp_break": {
+    "subtitle": "diemants_test.sapphire_lamp_break",
+    "sounds": [
+      "diemants_test:sapphire_lamp_break"
+    ]
+  },
+  "sapphire_lamp_step": {
+    "subtitle": "diemants_test.sapphire_lamp_step",
+    "sounds": [
+      "diemants_test:sapphire_lamp_step"
+    ]
+  },
+  "sapphire_lamp_place": {
+    "subtitle": "v.sapphire_lamp_place",
+    "sounds": [
+      "diemants_test:sapphire_lamp_place"
+    ]
+  },
+  "sapphire_lamp_hit": {
+    "subtitle": "diemants_test.sapphire_lamp_hit",
+    "sounds": [
+      "diemants_test:sapphire_lamp_hit"
+    ]
+  },
+  "sapphire_lamp_fall": {
+    "subtitle": "diemants_test.sapphire_lamp_fall",
+    "sounds": [
+      "diemants_test:sapphire_lamp_fall"
+    ]
+  },
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "diemants_test:bar_brawl",
+        "stream": true
+      }
+    ]
+  }
+}

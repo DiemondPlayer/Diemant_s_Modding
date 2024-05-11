@@ -20,6 +20,8 @@
   "item.diemants_test.cauliflower_seeds": "Cauliflower Seeds",
   "item.diemants_test.custom_dye": "Custom Dye",
   "item.diemants_test.radiation_staff": "Radiation Staff",
+  "item.diemants_test.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.diemants_test.bar_brawl_music_disc.desc": "Kolbasa",
 
   "block.diemants_test.muffin_block": "Muffin Block",
   "block.diemants_test.muffin_block_stairs": "Muffin Block Stairs",
@@ -52,5 +54,7 @@
   "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
   "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
 
-  "effect.diemants_test.slimey": "Slimey"
+  "effect.diemants_test.slimey": "Slimey",
+
+  "sounds.diemants_test.metal_detector_found_ore": "Metal Detector Finds an Ore"
 }

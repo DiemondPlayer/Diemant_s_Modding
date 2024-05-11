@@ -1,6 +1,7 @@
 package net.diemond_player.diemants_test.block.entity;
 
 import net.diemond_player.diemants_test.item.ModItems;
+import net.diemond_player.diemants_test.recipe.GemEmpoweringRecipe;
 import net.diemond_player.diemants_test.screen.GemEmpoweringStationScreenHandler;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.block.BlockState;
@@ -9,9 +10,11 @@ import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
+import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
+import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -20,6 +23,8 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Optional;
 
 public class GemEmpoweringStationBlockEntity extends BlockEntity
         implements ExtendedScreenHandlerFactory, ImplementedInventory {
@@ -110,9 +115,12 @@ public class GemEmpoweringStationBlockEntity extends BlockEntity
     }
 
     private void craftItem() {
+        Optional<RecipeEntry<GemEmpoweringRecipe>> recipe = getCurrentRecipe();
+
         this.removeStack(INPUT_SLOT, 1);
-        this.setStack(OUTPUT_SLOT, new ItemStack(ModItems.SAPPHIRE,
-                this.getStack(OUTPUT_SLOT).getCount() + 1));
+
+        this.setStack(OUTPUT_SLOT, new ItemStack(recipe.get().value().getOutput(null).getItem(),
+                this.getStack(OUTPUT_SLOT).getCount() + recipe.get().value().getOutput(null).getCount()));
     }
 
     private void resetProgress() {
@@ -128,7 +136,32 @@ public class GemEmpoweringStationBlockEntity extends BlockEntity
     }
 
     private boolean hasRecipe() {
-        return this.getStack(INPUT_SLOT).getItem() == ModItems.MUFFIN_CUP;
+        Optional<RecipeEntry<GemEmpoweringRecipe>> recipe = getCurrentRecipe();
+
+        if (recipe.isEmpty()) {
+            return false;
+        }
+        ItemStack output = recipe.get().value().getOutput(null);
+
+        return canInsertAmountIntoOutputSlot(output.getCount())
+                && canInsertItemIntoOutputSlot(output);
+    }
+
+    private boolean canInsertItemIntoOutputSlot(ItemStack output) {
+        return this.getStack(OUTPUT_SLOT).isEmpty() || this.getStack(OUTPUT_SLOT).getItem() == output.getItem();
+    }
+
+    private boolean canInsertAmountIntoOutputSlot(int count) {
+        return this.getStack(OUTPUT_SLOT).getMaxCount() >= this.getStack(OUTPUT_SLOT).getCount() + count;
+    }
+
+    private Optional<RecipeEntry<GemEmpoweringRecipe>> getCurrentRecipe() {
+        SimpleInventory inventory = new SimpleInventory((this.size()));
+        for(int i = 0; i < this.size(); i++) {
+            inventory.setStack(i, this.getStack(i));
+        }
+
+        return this.getWorld().getRecipeManager().getFirstMatch(GemEmpoweringRecipe.Type.INSTANCE, inventory, this.getWorld());
     }
 
     private boolean canInsertIntoOutputSlot() {

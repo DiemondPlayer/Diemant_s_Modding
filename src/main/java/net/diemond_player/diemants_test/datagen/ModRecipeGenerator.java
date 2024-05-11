@@ -1,9 +1,11 @@
 package net.diemond_player.diemants_test.datagen;
 
 import net.diemond_player.diemants_test.block.ModBlocks;
+import net.diemond_player.diemants_test.datagen.recipe.GemEmpoweringRecipeBuilder;
 import net.diemond_player.diemants_test.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
@@ -57,6 +59,21 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.MUFFIN_BLOCK), conditionsFromItem(ModBlocks.MUFFIN_BLOCK))
                 .offerTo(exporter, new Identifier("muffin_block_button"));
 
+        new GemEmpoweringRecipeBuilder(ModItems.MUFFIN_CUP, ModItems.SAPPHIRE, 3)
+                .criterion(hasItem(ModItems.MUFFIN_CUP), conditionsFromItem(ModItems.MUFFIN_CUP))
+                .offerTo(exporter);
+
+        new GemEmpoweringRecipeBuilder(Items.STICK, Items.END_ROD, 1)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
+
+        new GemEmpoweringRecipeBuilder(Items.COAL, Items.DIAMOND, 7)
+                .criterion(hasItem(Items.COAL), conditionsFromItem(Items.COAL))
+                .offerTo(exporter);
+
+        new GemEmpoweringRecipeBuilder(Blocks.PRISMARINE, Items.COOKED_CHICKEN, 12)
+                .criterion(hasItem(Blocks.PRISMARINE), conditionsFromItem(Blocks.PRISMARINE))
+                .offerTo(exporter);
 
     }
 }

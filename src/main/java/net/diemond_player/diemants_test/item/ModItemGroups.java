@@ -39,6 +39,8 @@ public class ModItemGroups {
                         entries.add(ModItems.CAULIFLOWER_SEEDS);
                         entries.add(ModItems.CUSTOM_DYE);
                         entries.add(ModItems.RADIATION_STAFF);
+                        entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
+
 
                         entries.add(EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(ModEnchantments.LIGHTNING_STRIKER, 1)));
                         entries.add(EnchantedBookItem.forEnchantment(new EnchantmentLevelEntry(ModEnchantments.LIGHTNING_STRIKER, 2)));

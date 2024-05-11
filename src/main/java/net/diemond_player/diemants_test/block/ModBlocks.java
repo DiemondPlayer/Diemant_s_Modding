@@ -5,6 +5,7 @@ import net.diemond_player.diemants_test.block.custom.CauliflowerCropBlock;
 import net.diemond_player.diemants_test.block.custom.GemEmpoweringStationBlock;
 import net.diemond_player.diemants_test.block.custom.SapphireLampBlock;
 import net.diemond_player.diemants_test.block.custom.SoundBlock;
+import net.diemond_player.diemants_test.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -43,7 +44,8 @@ public class ModBlocks {
             new SoundBlock(FabricBlockSettings.copyOf(Blocks.NOTE_BLOCK)));
     public static final Block SAPPHIRE_LAMP = registerBlock("sapphire_lamp",
             new SapphireLampBlock(FabricBlockSettings.copyOf(Blocks.HAY_BLOCK)
-                    .luminance(state -> state.get(SapphireLampBlock.CLICKED) ? 15 : 0)));
+                    .luminance(state -> state.get(SapphireLampBlock.CLICKED) ? 15 : 0)
+                    .sounds(ModSounds.SAPPHIRE_LAMP_SOUNDS)));
     public static final Block CAULIFLOWER_CROP = registerBlockWithoutItem("cauliflower_crop",
             new CauliflowerCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
     public static final Block PETUNIA = registerBlock("petunia",

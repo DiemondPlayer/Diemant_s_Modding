@@ -1,6 +1,7 @@
 package net.diemond_player.diemants_test.item.custom;
 
 import net.diemond_player.diemants_test.item.ModItems;
+import net.diemond_player.diemants_test.sound.ModSounds;
 import net.diemond_player.diemants_test.util.InventoryUtil;
 import net.diemond_player.diemants_test.util.ModTags;
 import net.minecraft.block.Block;
@@ -11,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
@@ -35,6 +37,8 @@ public class MetalDetectorItem extends Item {
                 if(isValuableBlock(blockstate)){
                     outputValuableCoordinates(positionClicked.down(i), player, block);
                     foundBlock = true;
+                    context.getWorld().playSound(null, positionClicked, ModSounds.METAL_DETECTOR_FOUND_ORE,
+                            SoundCategory.BLOCKS, 0.5f, 1f);
 
                     if(InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET)){
                         addNbtDataToDataTablet(player, positionClicked.down(i), block);
@@ -42,6 +46,8 @@ public class MetalDetectorItem extends Item {
 
                     break;
                 }
+
+
 
             }
 

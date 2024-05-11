@@ -119,8 +119,8 @@ public class GemEmpoweringStationBlockEntity extends BlockEntity
 
         this.removeStack(INPUT_SLOT, 1);
 
-        this.setStack(OUTPUT_SLOT, new ItemStack(recipe.get().value().getOutput(null).getItem(),
-                this.getStack(OUTPUT_SLOT).getCount() + recipe.get().value().getOutput(null).getCount()));
+        this.setStack(OUTPUT_SLOT, new ItemStack(recipe.get().value().getResult(null).getItem(),
+                this.getStack(OUTPUT_SLOT).getCount() + recipe.get().value().getResult(null).getCount()));
     }
 
     private void resetProgress() {
@@ -141,7 +141,7 @@ public class GemEmpoweringStationBlockEntity extends BlockEntity
         if (recipe.isEmpty()) {
             return false;
         }
-        ItemStack output = recipe.get().value().getOutput(null);
+        ItemStack output = recipe.get().value().getResult(null);
 
         return canInsertAmountIntoOutputSlot(output.getCount())
                 && canInsertItemIntoOutputSlot(output);
